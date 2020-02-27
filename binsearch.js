@@ -21,3 +21,27 @@ function binSearch(arr, value, start, end){
     return binSearch(array, value, index - 1)
   }
 } 
+
+
+//linear search 
+
+function indexOf(array, value) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == value) {
+            return i;
+        }
+    }
+    return -1;
+};
+
+
+//DFS search 
+
+class BinarySearchTree {
+    constructor(key = null, value = null, parent = null) {
+        this.key = key;
+        this.value = value;
+        this.parent = parent;
+        this.left = null;
+        this.right = null;
+    }
